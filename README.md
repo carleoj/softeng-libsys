@@ -1,1 +1,1 @@
-# Software Engineering Project by Carl Jimroe Paño
+# Software Engineering Project by Carl Paño
