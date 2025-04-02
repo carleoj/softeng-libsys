@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+.print-requests {
+    margin-left: 10px;
+    margin-top: -10px;
+    padding: 0; 
+    background-color: #4CAF50; /* Use similar background as printed */
+    color: #333; 
+    border-radius: 21px;
+    min-height: 89vh; /* Ensure it covers the full viewport height */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.print-requests h2 {
+    color: white; /* Set header color */
+    font-size: 2.5rem; /* Increased font size */
+    margin-bottom: 10px; /* Space below header */
+}
+
+.request-container {
+    height: 625px;
+    background-color: rgb(87, 99, 87); /* Similar background color */
+    border-top-right-radius: 21px;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    padding: 20px; /* Padding for spacing */
+}
+
+.table-container {
+    position: relative; /* To keep the button absolute within it */
+    margin-top: 30px; /* Space from title */
+}
+
+.button-container {
+    margin-bottom: 20px; /* Space below the button */
+    text-align: right; /* Align button to the right */
+}
+
+.add-request-button {
+    display: flex; /* Aligns content inside the button */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    gap: 5px; /* Space between image and text */
+    height: 45px; /* Button height */
+    width: 120px; /* Button width */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* Text color */
+    border-radius: 12px;
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.add-request-button img {
+    height: 24px; /* Fixed size for the icon */
+    width: 24px; /* Fixed size for the icon */
+    background-color: white;
+    object-fit: contain; /* Ensures the image scales without distortion */
+}
+
+
+.add-request-button:hover {
+    background-color: #257029; /* Darker green on hover */
+}
+
+.table-wrapper {
+    max-height: 600px; /* Set maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 2px solid #7691ab; /* Border around the table */
+    border-radius: 10px; /* Rounding corners */
+}
+
+/* Ensure the table takes full width of the wrapper */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures no space between table cells */
+    background-color: white; /* Table background */
+}
+
+th, td {
+    font-family: 'Montserrat', sans-serif; /* Font style */
+    text-align: left; /* Left align text */
+    font-size: 16px; /* Font size for header and cells */
+    padding: 20px; /* Padding for cells */
+    margin: 0; /* Remove any margin for cells */
+    border: none; /* Remove border for cells */
+}
+
+th {
+    background-color: #7691ab; /* Header background color */
+    color: white; /* Header text color */
+    font-size: 20px; /* Same font size for headers */
+}
+
+td {
+    font-size: 14px !important; /* Increased font size for cells */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra stripes for rows */
+}
+
+tbody tr:hover {
+    background-color: #c9debf; /* Highlight row on hover */
+}
+
+.modal-content h2{
+    color: black;
+    font-size: 14px;
+}
+
+.login-form{
+    margin-top: 50px;
+}
+
+.form-group input{
+    padding: 10px;
+}
+
+.form-group label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 10px;
+    padding: 20px;
+    vertical-align: top ;
+}
+
+.ok-button, .cancel-button {
+    height: 45px; /* Ensure both buttons have the same height */
+    width: 120px; /* Ensure both buttons have the same width */
+    border-radius: 5px; /* Consistent border radius */
+    margin-bottom: 10px; /* Space below buttons */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.ok-button:hover, .cancel-button:hover {
+    background-color: #257029; /* Darker green on hover */
+}
+
+.cancel-button {
+    background-color: #f44336; /* Red background for cancel button */
+}
+
+.cancel-button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-content {
+    background-color: white; /* White background for modal */
+    padding: 20px; /* Add padding */
+    border-radius: 21px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Limit maximum width */
+}
+
+.modal-content h3 {
+    margin-bottom: 15px; /* Space below title */
+    color: #333; /* Header color */
+    font-size: 24px; /* Adjust heading font size */
+    text-align: center; /* Center text */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%; /* Full width */
+    padding: 10px; /* Padding */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.form-group textarea {
+    resize: none; /* Prevent resizing */
+    min-height: 80px; /* Set a minimum height for the textarea */
+}
+
+.row-cancel-button {
+    background-color: #ff4d4d; /* Red color to indicate cancellation */
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    width: 50%; /* Adjusted width to fit within the table cell */
+    height: auto; /* Ensures it doesn’t exceed the row height */
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Centers the button within the cell */
+}
+
+.row-cancel-button:hover {
+    background-color: #ff3333; /* Darker red for hover effect */
+}
+
+.row-cancel-button:active {
+    background-color: #cc0000; /* Even darker red for active state */
+}
+
+.tooltip {
+    position: absolute;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    bottom: 125%; /* Position above the button */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip */
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.table-wrapper-s {
+    height: 520px;
+    max-height: 520px; /* Maximum height for the scroll area */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border-radius: 10px; /* Rounding corners */
+    margin-top: 10px; /* Space from add button */
+}
+
+/* Ensuring the Link column has a fixed width and wraps text */
+.table-wrapper-s td:nth-child(2), /* Second column for Link */
+.table-wrapper-s th:nth-child(2) {
+    width: 150px; /* Set fixed width as desired */
+    max-width: 150px; /* Max width to prevent expansion */
+    word-wrap: break-word; /* Enable wrapping for long links */
+    white-space: normal; /* Allow line breaks within the cell */
+}
+
+/* Additional style to make link look nice in wrapping */
+.table-wrapper-s td a {
+    display: block; /* Allows the link to break lines within cell */
+    overflow-wrap: break-word; /* Adds wrap support for any browser */
+    word-break: break-word; /* Breaks words for older compatibility */
+}

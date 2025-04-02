@@ -1,0 +1,219 @@
+/* Main Pending section styling */
+.pending {
+  margin-left: 10px;
+  padding: 0px; 
+  background-color: #4CAF50;
+  color: #333; 
+  border-radius: 21px;
+  min-height: 89vh; /* Ensure it covers the full viewport height */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+}
+
+.pending h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pending p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Pending request container and table styles */
+.pending-container {
+  height: 600px;
+  background-color: rgb(143, 168, 142);
+  border-radius: 0 0 21px 21px;
+  padding: 20px;
+}
+
+.table-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+.table-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 2px solid #7691ab;
+  border-radius: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  box-shadow: none;
+}
+
+th, td {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 12px;
+  padding: 20px;
+  margin: 0;
+  border: none;
+}
+
+th {
+  background-color: #7691ab;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal styles for viewing requests */
+/* Modal styles for viewing requests */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+/* Keyframes for modal animation */
+@keyframes modalAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content a {
+  word-wrap: break-word; /* Wraps long words onto the next line */
+  overflow-wrap: break-word; /* Adds wrapping support for long words */
+  word-break: break-all; /* Breaks long URLs if necessary */
+  color: #3366bb; /* Optional: Customize link color */
+  text-decoration: underline; /* Optional: Underline for clearer visibility */
+}
+
+
+.modal-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.modal-content p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #444;
+  line-height: 1.6;
+}
+
+.modal-content input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.modal-content input[type="number"]:focus {
+  border-color: #7691ab;
+  box-shadow: 0 0 5px rgba(118, 145, 171, 0.3);
+}
+
+.modal-content input[type="number"]::placeholder {
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+
+.approve-button,
+.decline-button{
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  flex: 1; /* Make buttons equal width */
+  transition: background-color 0.1s;
+}
+
+.cancel-button-p{
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  cursor: pointer;
+  flex: 1; /* Make buttons equal width */
+  transition: background-color 0.1s;
+} 
+
+.approve-button {
+  background-color: #4caf50;
+}
+
+.approve-button:hover {
+  background-color: #388e3c;
+}
+
+.decline-button {
+  background-color: #f44336;
+}
+
+.decline-button:hover {
+  background-color: #bd3329;
+}
+
+.cancel-button-p {
+  background-color: #b2b2b2;
+}
+
+.cancel-button-p:hover {
+  background-color: #5c5c5c;
+}
+
+/* Increase button font size */
+.modal-buttons button {
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px 0;
+}
+
+/* View button */
+.view-btn {
+  height: 30px;
+  background-color: #7691ab;
+  width: 50px;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.view-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #39a942;
+  cursor: pointer;
+}

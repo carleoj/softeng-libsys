@@ -1,0 +1,182 @@
+.stats {
+    margin-left: 10px;
+    padding: 0px;
+    background-color: #4CAF50;
+    color: #333;
+    border-radius: 21px;
+    min-height: 89vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats h2 {
+    color: white;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .stats-container {
+    height: 600px;
+    background-color: rgb(143, 168, 142); 
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    padding: 20px;
+    overflow: auto; /* To handle table overflow */
+  }
+  
+  .dropdown-container {
+    margin-bottom: 15px;
+  }
+  
+  .dropdown-container label {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .dropdown-container input[type="date"] {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .dropdown-container input[type="date"]:hover {
+    border-color: #4CAF50;
+  }
+
+  .stats-table {
+    max-height: 450px; /* Maximum height for the table */
+    overflow-y: auto; /* Allows vertical scrolling */
+  }
+  
+  /* Table Styling */
+  .stats-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-table th,
+  .stats-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .stats-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .stats-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .stats-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .stats-table td {
+    color: #555;
+  }
+  
+  /* Footer Styling */
+  .stats-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top of the container */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #3e8e41;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-footer .footer-left,
+  .stats-footer .footer-right {
+    display: flex;
+    flex-direction: column; /* Ensures the content aligns in a column */
+  }
+  
+  .stats-footer .footer-left span,
+  .stats-footer .footer-right span {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+
+  .export-dropdown {
+    margin-left: 20px;
+    display: inline-block;
+  }
+  
+  .export-dropdown label {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .export-dropdown select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .export-dropdown select:hover {
+    border-color: #4CAF50;
+  }
+
+  
+  .ok-button2 {
+    margin-left: 10px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ok-button2:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .ok-button2:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+
+  .download-pdf {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-pdf:hover {
+    background-color: #45a049;
+  }
+  
+  

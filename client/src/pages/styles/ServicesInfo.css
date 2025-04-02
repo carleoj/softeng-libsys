@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+.services-info {
+    margin: 0 auto; /* Center align the container */
+    padding: 0; 
+    background-color: #4CAF50;
+    margin-top: -10px;
+    color: #333; 
+    border-radius: 21px;
+    min-height: 89vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1180px; /* Set a maximum width for the component */
+    width: 100%; /* Ensures it takes full width of the container */
+}
+
+.services-info h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.services-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.services-container {
+    height: 625px;
+    background-image: url('../src/assets/cozy_library.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 21px;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    max-width: 100%; 
+}
+
+
+.left-services-container,
+.right-services-container {
+    background-color: rgba(229, 229, 229, 0.084);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 540px;
+    width: calc(50% - 10px); /* Subtracting margin to prevent overflow */
+    margin: 10px; /* Adjust margin to be uniform and avoid total width exceeding */
+    border-radius: 21px;
+    backdrop-filter: blur(20px) saturate(1.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.left-services-container .service-title {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800; /* Bolder font for title */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.left-services-container .service-hours {
+    color: white;
+    font-size: 18px; /* Slightly smaller font for hours */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 8px;
+    margin-left: 20px; /* Indentation for hours */
+    text-align: left; 
+}
+
+
+.right-services-container .service-title {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800; /* Bolder font for title */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.right-services-container .service-hours {
+    color: white;
+    font-size: 18px; /* Slightly smaller font for hours */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 8px;
+    margin-left: 20px; /* Indentation for hours */
+    text-align: left; 
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start fully transparent */
+    }
+    100% {
+      opacity: 1; /* End fully opaque */
+    }
+  }

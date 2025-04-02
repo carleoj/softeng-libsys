@@ -1,0 +1,202 @@
+/* Container styling */
+.signup-container {
+  background-image: url('../src/assets/cozy_library.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Aero Glass effect for div container */
+.div-container3 {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(20px) saturate(1.5); /* Frosted glass effect */
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeInSlideUp 1.5s ease-out;
+}
+
+.div-container3 h2{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Grid layout for form */
+.signup-form {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.signup-form label {
+  margin-left: 10px;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Username and Password grouped together */
+.input-group:nth-child(5),
+.input-group:nth-child(6) {
+  grid-column: span 2;
+}
+
+/* Label styling */
+.input-group label {
+  margin-bottom: 8px;
+  font-size: 10px;
+  color: #333;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Input field styling */
+.input-group input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Button styling */
+.signup-btn {
+  grid-column: span 2;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .div-container3 {
+      padding: 30px 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Single column layout on smaller screens */
+  .signup-form {
+      grid-template-columns: 1fr;
+  }
+
+  .signup-btn {
+      display: block;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 150px;
+  }
+}
+
+.signup-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Modal styling with Aero Glass effect */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(20px) saturate(1.5); /* Frosted glass effect */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Button inside modal */
+.modal-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-btn:hover {
+  background-color: #45a049;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

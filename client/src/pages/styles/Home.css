@@ -1,0 +1,70 @@
+/* General Home styles */
+.home-container {
+    background-image: url('../src/assets/cozy_library.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 90px); /* Subtract header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Welcome container styling with Aero Glass effect */
+.div-container1 {
+    height: 550px;
+    width: 950px;
+    max-width: 100%; /* Responsive for smaller screens */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    backdrop-filter: blur(20px) saturate(1.8); /* Enhanced frosted glass effect */
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    padding: 30px;
+    opacity: 0.95;
+    /* Animation */
+    animation: fadeInSlideUp 1.2s ease-out;
+}
+
+/* Heading styling with entry animation */
+.div-container1 h2 {
+    font-size: 90px;
+    text-align: left;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    /* Animation for heading */
+    animation: fadeIn 1.2s ease-out 0.5s both; /* Delay for h2 */
+}
+
+h2{
+    text-align: center;
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .div-container1 {
+        width: 90%; /* Responsive for mobile devices */
+        height: 500px;
+    }
+}

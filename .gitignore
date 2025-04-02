@@ -1,0 +1,14 @@
+# Ignore Node.js dependencies
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Ignore build files
+client/build/
+
+# Ignore environment variables
+server/.env
+client/.env
+
+# Ignore log files
+*.log

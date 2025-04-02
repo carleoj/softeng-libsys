@@ -1,0 +1,143 @@
+/* Container styles */
+.approved {
+  margin-left: 10px;
+  padding: 0;
+  background-color: #4CAF50;
+  color: #333;
+  border-radius: 21px;
+  min-height: 89vh;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.approved h2 {
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.approved p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Approved container */
+.approved-container {
+  height: 600px;
+  background-color: rgb(143, 168, 142);
+  border-radius: 0 0 21px 21px;
+  padding: 20px;
+}
+
+.table-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  border: 2px solid #7691ab;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+th, td {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 12px;
+  padding: 20px;
+}
+
+th {
+  background-color: #7691ab;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 2px solid #7691ab;
+  border-radius: 10px;
+}
+
+/* Modal overlay and animation */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Keyframes for the modal animation */
+@keyframes modalAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: modalAppear 0.3s ease-out;
+}
+/* Modal buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* General button styling */
+.cancel-button-a, .printed-button-a {
+  padding: 10px 20px; /* Same padding for consistent size */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px; /* Uniform font size */
+  min-width: 180px; /* Ensure consistent width */
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.printed-button-a {
+  background-color: #4caf50;
+}
+
+.printed-button-a:hover {
+  background-color: #388e3c;
+}
+
+/* Close button styles */
+.cancel-button-a {
+  background-color: #dc3545;
+}
+
+.cancel-button-a:hover {
+  background-color: #c82333;
+}
